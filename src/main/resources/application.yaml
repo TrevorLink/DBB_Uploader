@@ -1,0 +1,42 @@
+spring:
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+  datasource:
+      #配置数据库连接池的基本信息
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/dbb_uploader?characterEncoding=UTF-8
+      type: com.alibaba.druid.pool.DruidDataSource
+  web:
+    resources:
+      #设置一下静态资源扫描就可以通过工程名直接访问
+      static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/,file:${photo.file.dir}
+  servlet:
+    multipart:
+      max-file-size: 10MB
+logging:
+  level:
+    root: info
+    com.hyy: debug
+  file:
+#      Windows本机上的配置
+    path: G:\workspace\workspace_myIdea\DBBUploader
+#       Linux服务器上的配置
+#         dir: /home/
+photo:
+    file:
+#      Windows本机上的配置
+      dir: G:\workspace\workspace_myIdea\DBBUploader\photos
+#       Linux服务器上的配置
+#         dir: /home/
+mybatis-plus:
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.hyy.bean
+  configuration:
+    #Mybatis-Plus默认是开启驼峰转下划线的，我们这边需要关掉
+    map-underscore-to-camel-case: false
+server:
+  port: 8080

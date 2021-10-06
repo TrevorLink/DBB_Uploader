@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/upload.css}">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="title">
+    <img th:src="@{/images/logo.png}">
+</div>
+<div th:insert="~{common::navigator}"></div>
+<h2 align="center">大宝贝助手-登录</h2>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div align="center" style="color: red">
+                <strong th:text="${errorMsg}"></strong>
+            </div>
+            <form class="form-horizontal" th:action="@{/user/login}" method="post">
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail"></label>
+                    <div class="controls" align="center">
+                        用户名<input id="inputEmail" type="text" name="username"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword"></label>
+                    <div class="controls" align="center">
+                        密码 <input id="inputPassword" type="password" name="password"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls" align="center">
+                        <button type="submit" class="btn">登陆</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

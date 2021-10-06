@@ -1,0 +1,32 @@
+.title {
+    width: 99999px;
+    height: 300px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    background-color: black;
+}
+.selectFile{
+    color: white;
+    position: relative;
+    left: 40%;
+    background-color: #159cce;
+    border: 2px;
+    border-radius: 12px;
+    font-size: 30px;
+    text-align: center;
+    width: 20%;
+    -webkit-transition-duration: 0.4s;
+}
+.uploadFile {
+    position: relative;
+    left: 40%;
+    background-color: #37de7f;
+    color: white;
+    border: 2px;
+    border-radius: 12px;
+    font-size: 30px;
+    text-align: center;
+    width: 20%;
+    -webkit-transition-duration: 0.4s;
+}

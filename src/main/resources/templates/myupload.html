@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>我的文件上传</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/upload.css}">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="title">
+    <img th:src="@{/images/logo.png}">
+</div>
+<div th:insert="~{common::navigator}"></div>
+<h2 align="center">大宝贝助手-我的上传</h2>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        图片编号
+                    </th>
+                    <th>
+                        图片名称
+                    </th>
+                    <th>
+                        创建时间
+                    </th>
+                    <th>
+                        详细图片
+                    </th>
+                    <th>
+                        图片操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr  th:each="file,count : ${uploadFilePage.getRecords()}" th:class="${count.odd?'info':''}">
+                    <td>
+                        <span th:text="${file.id}"></span>
+                    </td>
+                    <td>
+                        <span th:text="${file.name}"></span>
+                    </td>
+                    <td>
+                        <span th:text="${file.date}"></span>
+                    </td>
+                    <td>
+                        <img th:src="@{/}+${file.name}" width="60">
+                    </td>
+                    <td>
+                        <a th:href="@{/}+${file.name}">点我查看大图</a>
+                        <a th:href="@{/uploadFile/delete(id=${file.id})}">删除图片</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div>
+                <ul class="pagination pull-right no-margin">
+                    <li>
+                        <a th:if="${uploadFilePage.getCurrent()}>1" th:href="@{/uploadFile/toMyUpload(pageNo=1)}">首页</a>
+                    </li>
+                    <li>
+                        <a th:if="${uploadFilePage.getCurrent()}>1" th:href="@{/uploadFile/toMyUpload(pageNo=${uploadFilePage.getCurrent()}-1)}">上一页</a>
+                    </li>
+                    <li th:each="currentNum:${#numbers.sequence(1,uploadFilePage.pages)}">
+                        <a th:text="${currentNum}" th:href="@{/uploadFile/toMyUpload(pageNo=${currentNum})}"></a>
+                    </li>
+                    <li>
+                        <a th:if="${uploadFilePage.getCurrent()}<${uploadFilePage.pages}" th:href="@{/uploadFile/toMyUpload(pageNo=${uploadFilePage.getCurrent()}+1)}">下一页</a>
+                    </li>
+                    <li>
+                        <a th:if="${uploadFilePage.getCurrent()}<${uploadFilePage.pages}" th:href="@{/uploadFile/toMyUpload(pageNo=${uploadFilePage.pages})}">尾页</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

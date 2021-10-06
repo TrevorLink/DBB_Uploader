@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--头部导航栏-->
+<div  th:fragment="navigator" class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
+      <ul class="nav nav-tabs">
+        <li th:class="${#httpServletRequest.requestURL.substring(#httpServletRequest.requestURL.lastIndexOf('/'))}=='/goUpload'?'active':' '">
+          <a th:href="@{/uploadFile/goUpload}" >上传</a>
+        </li>
+        <li th:class="${#httpServletRequest.requestURL.substring(#httpServletRequest.requestURL.lastIndexOf('/'))}=='/goRegister'?'active':' '">
+          <a th:href="@{/user/goRegister}">注册</a>
+        </li>
+        <li th:class="${#httpServletRequest.requestURL.substring(#httpServletRequest.requestURL.lastIndexOf('/'))}=='/goLogin'?'active':' '">
+          <a th:href="@{/user/goLogin}">登录</a>
+        </li>
+        <li th:class="${#httpServletRequest.requestURL.substring(#httpServletRequest.requestURL.lastIndexOf('/'))}=='/toMyUpload'?'active':' '">
+          <a th:href="@{/user/goMyUpload}">我的大宝贝</a>
+        </li>
+        <li class="dropdown pull-right">
+          <a  th:if="${session.user}!=null" th:text="注销" th:href="@{/user/logOut}"></a>
+        </li>
+        <li class="dropdown pull-right" >
+          <a  th:if="${session.user}!=null" th:text="${session.user.getUsername()}"></a>
+          <a  th:if="${session.user}==null" th:text="游客"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
