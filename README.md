@@ -1,6 +1,6 @@
-github远程仓库地址:https://github.com/TrevorLink/DBB_Uploader
+github远程仓库地址:
 
-已部署的地址：http://120.24.179.229:8081/
+已部署的地址：
 
 # 需求分析
 

@@ -48,16 +48,10 @@ public class UploadFileController {
     * @param model
     * @return
     */
-   @RequestMapping("goUpload")
-   public String goUpload(HttpSession session, Model model) {
-      User user = (User) session.getAttribute("user");
-      if (user == null) {
-         model.addAttribute("errorMsg", "您还未登录，请先登录后再上传文件！");
-         logger.debug("您还未登录，请先登录后再上传文件！");
-         return "login";
-      }
-      return "upload";
-   }
+//   @RequestMapping("goUpload")
+//   public String goUpload(HttpSession session, Model model) {
+//      return "upload";
+//   }
 
    /**
     * 上传文件

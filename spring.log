@@ -1,410 +1,569 @@
-2021-10-06 16:15:39.858  INFO 22532 --- [main] com.hyy.DbbUploaderApplication           : Starting DbbUploaderApplication using Java 1.8.0_131 on LAPTOP-03RO5V2B with PID 22532 (G:\workspace\workspace_myIdea\DBBUploader\target\classes started by 28459 in G:\workspace\workspace_myIdea\DBBUploader)
-2021-10-06 16:15:39.861 DEBUG 22532 --- [main] com.hyy.DbbUploaderApplication           : Running with Spring Boot v2.5.5, Spring v5.3.10
-2021-10-06 16:15:39.861  INFO 22532 --- [main] com.hyy.DbbUploaderApplication           : No active profile set, falling back to default profiles: default
-2021-10-06 16:15:41.119  INFO 22532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2021-10-06 16:15:41.128  INFO 22532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-10-06 16:15:41.128  INFO 22532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 16:15:41.205  INFO 22532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-10-06 16:15:41.206  INFO 22532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1289 ms
-2021-10-06 16:15:41.342  INFO 22532 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2021-10-06 16:15:41.427  INFO 22532 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2021-10-06 16:15:43.951  INFO 22532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2021-10-06 16:15:43.961  INFO 22532 --- [main] com.hyy.DbbUploaderApplication           : Started DbbUploaderApplication in 4.707 seconds (JVM running for 6.814)
-2021-10-06 16:16:36.715  INFO 20472 --- [main] com.hyy.DbbUploaderApplication           : Starting DbbUploaderApplication using Java 1.8.0_131 on LAPTOP-03RO5V2B with PID 20472 (G:\workspace\workspace_myIdea\DBBUploader\target\classes started by 28459 in G:\workspace\workspace_myIdea\DBBUploader)
-2021-10-06 16:16:36.718 DEBUG 20472 --- [main] com.hyy.DbbUploaderApplication           : Running with Spring Boot v2.5.5, Spring v5.3.10
-2021-10-06 16:16:36.718  INFO 20472 --- [main] com.hyy.DbbUploaderApplication           : No active profile set, falling back to default profiles: default
-2021-10-06 16:16:37.715  INFO 20472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-10-06 16:16:37.721  INFO 20472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-10-06 16:16:37.721  INFO 20472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-06 16:16:37.799  INFO 20472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-10-06 16:16:37.799  INFO 20472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1032 ms
-2021-10-06 16:16:37.928  INFO 20472 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2021-10-06 16:16:38.014  INFO 20472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2021-10-06 16:16:40.315  INFO 20472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-10-06 16:16:40.324  INFO 20472 --- [main] com.hyy.DbbUploaderApplication           : Started DbbUploaderApplication in 4.041 seconds (JVM running for 5.678)
-2021-10-06 16:16:44.071  INFO 20472 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-06 16:16:44.071  INFO 20472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-10-06 16:16:44.072  INFO 20472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-10-06 16:16:50.449 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : User{id=null, username='admin', password='admin', email='null'}
-2021-10-06 16:16:50.668 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
-2021-10-06 16:16:50.689 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
-2021-10-06 16:16:50.699 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
-2021-10-06 16:16:50.701 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
-2021-10-06 16:16:52.238 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
-2021-10-06 16:16:52.247 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:16:52.248 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:16:52.274 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:16:52.275 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:16:52.280 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:16:52.287 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:16:52.287 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:16:52.289 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 1
-2021-10-06 16:16:52.290 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 总记录数为1
-2021-10-06 16:16:52.290 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : pages=1
-2021-10-06 16:16:52.290 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=17, name='QQ图片20210613220401.jpg', date=2021-10-04, userId=1}]
-2021-10-06 16:16:55.910 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 即将被删除的图片的id为17
-2021-10-06 16:16:55.913 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.deleteById   : ==>  Preparing: DELETE FROM upload_file WHERE id=?
-2021-10-06 16:16:55.915 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.deleteById   : ==> Parameters: 17(Integer)
-2021-10-06 16:16:55.920 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.deleteById   : <==    Updates: 1
-2021-10-06 16:16:55.925 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:16:55.925 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:16:55.928 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:16:55.929 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:16:55.930 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:16:55.930 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 总记录数为0
-2021-10-06 16:16:55.930 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : pages=0
-2021-10-06 16:16:55.930 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[]
-2021-10-06 16:17:02.741 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:17:02.741 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@645fb69f
-2021-10-06 16:17:02.745 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='Luna.jpg', date=2021-10-06, userId=1}
-2021-10-06 16:17:02.746 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:17:02.747 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: Luna.jpg(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:17:02.755 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:17:02.762 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:17:02.762 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:02.765 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:02.765 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:02.766 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:02.767 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:17:02.767 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:17:02.768 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 1
-2021-10-06 16:17:02.769 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 总记录数为1
-2021-10-06 16:17:02.769 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : pages=1
-2021-10-06 16:17:02.769 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:17:04.348 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
-2021-10-06 16:17:05.511 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
-2021-10-06 16:17:12.179 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:17:12.179 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@bbbf907
-2021-10-06 16:17:12.181 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}
-2021-10-06 16:17:12.182 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:17:12.182 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: QQ图片20210613220401.jpg(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:17:12.183 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:17:12.189 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:17:12.189 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:12.192 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:12.193 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:12.194 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:12.196 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:17:12.197 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:17:12.198 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 2
-2021-10-06 16:17:12.198 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 总记录数为2
-2021-10-06 16:17:12.198 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : pages=1
-2021-10-06 16:17:12.198 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:17:16.965 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:17:16.966 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@44467169
-2021-10-06 16:17:16.968 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}
-2021-10-06 16:17:16.969 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:17:16.969 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: Snipaste_2021-08-16_13-34-36.png(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:17:16.971 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:17:16.977 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:17:16.978 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:16.980 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:16.981 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:16.981 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:16.982 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:17:16.982 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:17:16.984 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 3
-2021-10-06 16:17:16.984 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 总记录数为3
-2021-10-06 16:17:16.984 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : pages=1
-2021-10-06 16:17:16.984 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}]
-2021-10-06 16:17:24.668 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:17:24.668 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@42d1a034
-2021-10-06 16:17:24.671 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='壁纸.jpg', date=2021-10-06, userId=1}
-2021-10-06 16:17:24.671 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:17:24.672 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: 壁纸.jpg(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:17:24.673 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:17:24.678 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:17:24.679 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:24.682 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:24.683 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:24.684 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:24.685 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:17:24.685 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:17:24.687 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:17:24.687 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 总记录数为4
-2021-10-06 16:17:24.687 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : pages=1
-2021-10-06 16:17:24.687 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:17:30.719 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:17:30.719 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@3ec5a955
-2021-10-06 16:17:30.721 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='Vergil.jpg', date=2021-10-06, userId=1}
-2021-10-06 16:17:30.721 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:17:30.722 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: Vergil.jpg(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:17:30.724 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:17:30.729 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:17:30.729 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:30.731 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:30.731 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:30.731 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:30.733 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:17:30.733 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:17:30.735 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:17:30.736 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 总记录数为5
-2021-10-06 16:17:30.736 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:17:30.736 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:17:35.871 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:17:35.872 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@3a8e38e6
-2021-10-06 16:17:35.876 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='ys 8.png', date=2021-10-06, userId=1}
-2021-10-06 16:17:35.877 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:17:35.877 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: ys 8.png(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:17:35.879 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:17:35.885 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:17:35.886 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:35.888 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:35.889 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:35.890 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:35.891 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:17:35.892 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:17:35.895 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:17:35.897 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 总记录数为6
-2021-10-06 16:17:35.897 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:17:35.897 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:17:37.134 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
-2021-10-06 16:17:37.134 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:37.138 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:37.138 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:37.139 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:37.140 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
-2021-10-06 16:17:37.141 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
-2021-10-06 16:17:37.142 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 2
-2021-10-06 16:17:37.142 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 总记录数为6
-2021-10-06 16:17:37.142 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:17:37.142 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}, UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}]
-2021-10-06 16:17:46.453 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:17:46.453 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@75a505f
-2021-10-06 16:17:46.458 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='ys.png', date=2021-10-06, userId=1}
-2021-10-06 16:17:46.459 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:17:46.459 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: ys.png(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:17:46.461 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:17:46.466 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:17:46.466 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:46.468 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:46.468 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:46.469 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:46.470 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:17:46.470 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:17:46.471 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:17:46.472 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 总记录数为7
-2021-10-06 16:17:46.472 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:17:46.472 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:17:47.789 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
-2021-10-06 16:17:47.789 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:17:47.792 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:17:47.793 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:17:47.793 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:17:47.794 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
-2021-10-06 16:17:47.794 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
-2021-10-06 16:17:47.795 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 3
-2021-10-06 16:17:47.795 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 总记录数为7
-2021-10-06 16:17:47.796 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:17:47.796 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}, UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}]
-2021-10-06 16:18:03.069 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:18:03.069 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2328a6a
-2021-10-06 16:18:03.071 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='OIP-C (3).jpg', date=2021-10-06, userId=1}
-2021-10-06 16:18:03.071 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:18:03.072 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: OIP-C (3).jpg(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:18:03.074 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:18:03.080 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:18:03.080 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:18:03.082 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:18:03.082 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:18:03.083 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:18:03.084 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:18:03.084 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:18:03.085 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:18:03.085 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 总记录数为8
-2021-10-06 16:18:03.085 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:18:03.085 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:18:04.302 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
-2021-10-06 16:18:04.302 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:18:04.305 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:18:04.306 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:18:04.307 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:18:04.307 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
-2021-10-06 16:18:04.308 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
-2021-10-06 16:18:04.308 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:18:04.309 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 总记录数为8
-2021-10-06 16:18:04.309 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:18:04.309 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}, UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}, UploadFile{id=25, name='OIP-C (3).jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:18:08.374 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:18:08.374 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:18:08.376 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:18:08.377 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:18:08.378 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:18:08.378 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:18:08.379 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:18:08.380 DEBUG 20472 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:18:08.380 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 总记录数为8
-2021-10-06 16:18:08.380 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:18:08.380 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:20:09.533 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UserController         : User{id=null, username='admin', password='admin', email='null'}
-2021-10-06 16:20:09.556 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
-2021-10-06 16:20:09.557 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
-2021-10-06 16:20:09.557 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
-2021-10-06 16:20:09.558 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
-2021-10-06 16:20:21.612 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
-2021-10-06 16:21:22.126 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
-2021-10-06 16:23:09.443 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : User{id=null, username='admin', password='admin', email='null'}
-2021-10-06 16:23:09.445 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
-2021-10-06 16:23:09.446 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
-2021-10-06 16:23:09.447 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
-2021-10-06 16:23:09.447 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
-2021-10-06 16:25:15.297 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UserController         : User{id=null, username='admin', password='admin', email='null'}
-2021-10-06 16:25:15.299 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
-2021-10-06 16:25:15.300 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
-2021-10-06 16:25:15.300 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
-2021-10-06 16:25:15.301 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
-2021-10-06 16:25:16.725 DEBUG 20472 --- [http-nio-8080-exec-5] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
-2021-10-06 16:25:16.733 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:25:16.734 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:25:16.735 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:25:16.736 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:25:16.736 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:25:16.737 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:25:16.737 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:25:16.738 DEBUG 20472 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:25:16.739 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 总记录数为8
-2021-10-06 16:25:16.739 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:25:16.739 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:25:37.375 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
-2021-10-06 16:25:37.375 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:25:37.378 DEBUG 20472 --- [http-nio-8080-exec-10] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:25:37.378 DEBUG 20472 --- [http-nio-8080-exec-10] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:25:37.379 DEBUG 20472 --- [http-nio-8080-exec-10] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:25:37.380 DEBUG 20472 --- [http-nio-8080-exec-10] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
-2021-10-06 16:25:37.380 DEBUG 20472 --- [http-nio-8080-exec-10] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
-2021-10-06 16:25:37.381 DEBUG 20472 --- [http-nio-8080-exec-10] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:25:37.382 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 总记录数为8
-2021-10-06 16:25:37.382 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:25:37.382 DEBUG 20472 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}, UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}, UploadFile{id=25, name='OIP-C (3).jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:25:49.303 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 收到的用户id为1
-2021-10-06 16:25:49.303 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@704b1873
-2021-10-06 16:25:49.305 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='QQ图片20210613220231.jpg', date=2021-10-06, userId=1}
-2021-10-06 16:25:49.306 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
-2021-10-06 16:25:49.307 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: QQ图片20210613220231.jpg(String), 2021-10-06(Date), 1(Integer)
-2021-10-06 16:25:49.308 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
-2021-10-06 16:25:49.313 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:25:49.313 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:25:49.317 DEBUG 20472 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:25:49.317 DEBUG 20472 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:25:49.318 DEBUG 20472 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:25:49.318 DEBUG 20472 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:25:49.319 DEBUG 20472 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:25:49.320 DEBUG 20472 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:25:49.320 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 总记录数为9
-2021-10-06 16:25:49.320 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : pages=3
-2021-10-06 16:25:49.320 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:25:50.725 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
-2021-10-06 16:25:50.725 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:25:50.729 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:25:50.729 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:25:50.730 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:25:50.731 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
-2021-10-06 16:25:50.731 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
-2021-10-06 16:25:50.732 DEBUG 20472 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:25:50.732 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 总记录数为9
-2021-10-06 16:25:50.732 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : pages=3
-2021-10-06 16:25:50.732 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}, UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}, UploadFile{id=25, name='OIP-C (3).jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:26:10.174 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 当前用户所在页码为3
-2021-10-06 16:26:10.174 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:26:10.177 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:26:10.177 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:26:10.178 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:26:10.179 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
-2021-10-06 16:26:10.179 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 8(Long), 4(Long)
-2021-10-06 16:26:10.181 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 1
-2021-10-06 16:26:10.181 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 总记录数为9
-2021-10-06 16:26:10.181 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : pages=3
-2021-10-06 16:26:10.181 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=26, name='QQ图片20210613220231.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:26:21.462 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:26:21.463 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:26:21.465 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:26:21.466 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:26:21.466 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:26:21.467 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:26:21.468 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:26:21.469 DEBUG 20472 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:26:21.469 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 总记录数为9
-2021-10-06 16:26:21.469 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : pages=3
-2021-10-06 16:26:21.469 DEBUG 20472 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:27:10.422 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 当前用户所在页码为3
-2021-10-06 16:27:10.423 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:27:10.425 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:27:10.425 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:27:10.426 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:27:10.428 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
-2021-10-06 16:27:10.428 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 8(Long), 4(Long)
-2021-10-06 16:27:10.429 DEBUG 20472 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 1
-2021-10-06 16:27:10.429 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 总记录数为9
-2021-10-06 16:27:10.429 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : pages=3
-2021-10-06 16:27:10.429 DEBUG 20472 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=26, name='QQ图片20210613220231.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:27:33.678 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:27:33.679 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:27:33.683 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:27:33.683 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:27:33.686 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:27:33.686 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:27:33.686 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:27:33.687 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:27:33.688 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 总记录数为9
-2021-10-06 16:27:33.688 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : pages=3
-2021-10-06 16:27:33.688 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:27:36.414 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
-2021-10-06 16:27:36.414 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:27:36.418 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:27:36.419 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:27:36.419 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:27:36.420 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
-2021-10-06 16:27:36.420 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
-2021-10-06 16:27:36.421 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:27:36.421 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 总记录数为9
-2021-10-06 16:27:36.421 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : pages=3
-2021-10-06 16:27:36.421 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}, UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}, UploadFile{id=25, name='OIP-C (3).jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:27:38.172 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:27:38.172 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:27:38.175 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:27:38.175 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:27:38.176 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:27:38.177 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:27:38.178 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:27:38.179 DEBUG 20472 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:27:38.179 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 总记录数为9
-2021-10-06 16:27:38.179 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : pages=3
-2021-10-06 16:27:38.179 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=20, name='Snipaste_2021-08-16_13-34-36.png', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:28:43.406 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 即将被删除的图片的id为20
-2021-10-06 16:28:43.407 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.deleteById   : ==>  Preparing: DELETE FROM upload_file WHERE id=?
-2021-10-06 16:28:43.407 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.deleteById   : ==> Parameters: 20(Integer)
-2021-10-06 16:28:43.429 DEBUG 20472 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.deleteById   : <==    Updates: 1
-2021-10-06 16:28:43.435 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
-2021-10-06 16:28:43.435 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 用户的userId为1
-2021-10-06 16:28:43.437 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
-2021-10-06 16:28:43.437 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
-2021-10-06 16:28:43.438 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : <==      Total: 1
-2021-10-06 16:28:43.439 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
-2021-10-06 16:28:43.440 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
-2021-10-06 16:28:43.441 DEBUG 20472 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
-2021-10-06 16:28:43.441 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 总记录数为8
-2021-10-06 16:28:43.441 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : pages=2
-2021-10-06 16:28:43.441 DEBUG 20472 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
-2021-10-06 16:34:32.374 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UserController         : 您还未登录，请先登录后再查看我的上传！
-2021-10-06 16:35:28.785 DEBUG 20472 --- [http-nio-8080-exec-6] com.hyy.contoller.UserController         : 您还未登录，请先登录后再查看我的上传！
-2021-10-06 16:35:39.605 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.contoller.UserController         : User{id=null, username='sadadad', password='sadsadsa', email='null'}
-2021-10-06 16:35:39.608 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
-2021-10-06 16:35:39.609 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: sadadad(String)
-2021-10-06 16:35:39.610 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 0
-2021-10-06 16:35:39.611 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.contoller.UserController         : 用户不存在
-2021-10-06 16:36:33.575 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UserController         : User{id=null, username='admin', password='sadasdsadsadsaddadsd', email='null'}
-2021-10-06 16:36:33.577 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
-2021-10-06 16:36:33.578 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
-2021-10-06 16:36:33.579 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
-2021-10-06 16:36:33.579 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
-2021-10-06 16:36:33.580 DEBUG 20472 --- [http-nio-8080-exec-1] com.hyy.contoller.UserController         : 用户名或密码错误
-2021-10-06 16:37:44.195 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
-2021-10-06 16:37:44.196 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
-2021-10-06 16:37:44.198 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
-2021-10-06 16:37:44.198 DEBUG 20472 --- [http-nio-8080-exec-4] com.hyy.contoller.UserController         : 该用户名已存在，请换一个试试
-2021-10-06 16:38:45.518 DEBUG 20472 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 您还未登录，请先登录后再上传文件！
-2021-10-06 16:38:49.850 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : User{id=null, username='admin', password='admin', email='null'}
-2021-10-06 16:38:49.853 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
-2021-10-06 16:38:49.853 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
-2021-10-06 16:38:49.854 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
-2021-10-06 16:38:49.855 DEBUG 20472 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
+2021-10-22 15:04:09.778  INFO 50968 --- [main] com.hyy.DbbUploaderApplication           : Starting DbbUploaderApplication using Java 1.8.0_131 on LAPTOP-03RO5V2B with PID 50968 (G:\workspace\workspace_myIdea\DBBUploader\target\classes started by 28459 in G:\workspace\workspace_myIdea\DBBUploader)
+2021-10-22 15:04:09.785 DEBUG 50968 --- [main] com.hyy.DbbUploaderApplication           : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-22 15:04:09.786  INFO 50968 --- [main] com.hyy.DbbUploaderApplication           : No active profile set, falling back to default profiles: default
+2021-10-22 15:04:10.765  INFO 50968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-22 15:04:10.773  INFO 50968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 15:04:10.773  INFO 50968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-22 15:04:10.862  INFO 50968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 15:04:10.863  INFO 50968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1020 ms
+2021-10-22 15:04:10.988  INFO 50968 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-10-22 15:04:11.071  INFO 50968 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-10-22 15:04:13.714  INFO 50968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-22 15:04:13.722  INFO 50968 --- [main] com.hyy.DbbUploaderApplication           : Started DbbUploaderApplication in 4.402 seconds (JVM running for 6.385)
+2021-10-22 15:04:18.194  INFO 50968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 15:04:18.194  INFO 50968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-22 15:04:18.195  INFO 50968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-22 15:05:07.846  INFO 46484 --- [main] com.hyy.DbbUploaderApplication           : Starting DbbUploaderApplication using Java 1.8.0_131 on LAPTOP-03RO5V2B with PID 46484 (G:\workspace\workspace_myIdea\DBBUploader\target\classes started by 28459 in G:\workspace\workspace_myIdea\DBBUploader)
+2021-10-22 15:05:07.849 DEBUG 46484 --- [main] com.hyy.DbbUploaderApplication           : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-22 15:05:07.849  INFO 46484 --- [main] com.hyy.DbbUploaderApplication           : No active profile set, falling back to default profiles: default
+2021-10-22 15:05:08.689  INFO 46484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-22 15:05:08.695  INFO 46484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 15:05:08.695  INFO 46484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-22 15:05:08.781  INFO 46484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 15:05:08.781  INFO 46484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 886 ms
+2021-10-22 15:05:08.882  INFO 46484 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-10-22 15:05:08.944  INFO 46484 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-10-22 15:05:11.451  INFO 46484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-22 15:05:11.460  INFO 46484 --- [main] com.hyy.DbbUploaderApplication           : Started DbbUploaderApplication in 3.959 seconds (JVM running for 5.875)
+2021-10-22 15:05:20.805  INFO 46484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 15:05:20.805  INFO 46484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-22 15:05:20.806  INFO 46484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-22 15:05:52.821  INFO 34512 --- [main] com.hyy.DbbUploaderApplication           : Starting DbbUploaderApplication using Java 1.8.0_131 on LAPTOP-03RO5V2B with PID 34512 (G:\workspace\workspace_myIdea\DBBUploader\target\classes started by 28459 in G:\workspace\workspace_myIdea\DBBUploader)
+2021-10-22 15:05:52.823 DEBUG 34512 --- [main] com.hyy.DbbUploaderApplication           : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-22 15:05:52.824  INFO 34512 --- [main] com.hyy.DbbUploaderApplication           : No active profile set, falling back to default profiles: default
+2021-10-22 15:05:53.649  INFO 34512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-22 15:05:53.655  INFO 34512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 15:05:53.655  INFO 34512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-22 15:05:53.730  INFO 34512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 15:05:53.731  INFO 34512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 867 ms
+2021-10-22 15:05:53.834  INFO 34512 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-10-22 15:05:53.896  INFO 34512 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-10-22 15:05:56.243  INFO 34512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-22 15:05:56.250  INFO 34512 --- [main] com.hyy.DbbUploaderApplication           : Started DbbUploaderApplication in 3.791 seconds (JVM running for 5.542)
+2021-10-22 15:05:57.174  INFO 34512 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 15:05:57.174  INFO 34512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-22 15:05:57.175  INFO 34512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-22 15:05:57.474 DEBUG 34512 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:05:57.474 DEBUG 34512 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:03.480 DEBUG 34512 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:06:03.480 DEBUG 34512 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:04.462 DEBUG 34512 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:06:04.462 DEBUG 34512 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:06.572 DEBUG 34512 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:06:06.572 DEBUG 34512 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:06.607 DEBUG 34512 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:06:06.607 DEBUG 34512 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:17.316 DEBUG 34512 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /user/goRegister请求被拦截
+2021-10-22 15:06:17.316 DEBUG 34512 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:17.364 DEBUG 34512 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:06:17.365 DEBUG 34512 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:22.263 DEBUG 34512 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:06:22.263 DEBUG 34512 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:41.656 DEBUG 34512 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:06:41.656 DEBUG 34512 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:43.400 DEBUG 34512 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:06:43.401 DEBUG 34512 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:43.433 DEBUG 34512 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:06:43.433 DEBUG 34512 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:46.582 DEBUG 34512 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /user/goRegister请求被拦截
+2021-10-22 15:06:46.583 DEBUG 34512 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:06:46.620 DEBUG 34512 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:06:46.620 DEBUG 34512 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:07:21.128 DEBUG 34512 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /user/goLogin请求被拦截
+2021-10-22 15:07:21.128 DEBUG 34512 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:07:21.185 DEBUG 34512 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:07:21.186 DEBUG 34512 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:07:23.959 DEBUG 34512 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /user/goLogin请求被拦截
+2021-10-22 15:07:23.959 DEBUG 34512 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:07:23.993 DEBUG 34512 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:07:23.993 DEBUG 34512 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:00.473  INFO 41596 --- [main] com.hyy.DbbUploaderApplication           : Starting DbbUploaderApplication using Java 1.8.0_131 on LAPTOP-03RO5V2B with PID 41596 (G:\workspace\workspace_myIdea\DBBUploader\target\classes started by 28459 in G:\workspace\workspace_myIdea\DBBUploader)
+2021-10-22 15:09:00.476 DEBUG 41596 --- [main] com.hyy.DbbUploaderApplication           : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-22 15:09:00.476  INFO 41596 --- [main] com.hyy.DbbUploaderApplication           : No active profile set, falling back to default profiles: default
+2021-10-22 15:09:01.453  INFO 41596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-22 15:09:01.460  INFO 41596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 15:09:01.460  INFO 41596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-22 15:09:01.554  INFO 41596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 15:09:01.554  INFO 41596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1038 ms
+2021-10-22 15:09:01.670  INFO 41596 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-10-22 15:09:01.737  INFO 41596 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-10-22 15:09:04.525  INFO 41596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-22 15:09:04.534  INFO 41596 --- [main] com.hyy.DbbUploaderApplication           : Started DbbUploaderApplication in 4.429 seconds (JVM running for 6.334)
+2021-10-22 15:09:48.271  INFO 41596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 15:09:48.271  INFO 41596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-22 15:09:48.272  INFO 41596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-22 15:09:48.633 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:48.634 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:52.357 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:52.357 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:54.525 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:54.525 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:55.919 DEBUG 41596 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:55.919 DEBUG 41596 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:56.563 DEBUG 41596 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:56.563 DEBUG 41596 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:57.212 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:57.212 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:57.711 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:57.711 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:58.217 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:58.217 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:09:59.031 DEBUG 41596 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:09:59.031 DEBUG 41596 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:10:02.836 DEBUG 41596 --- [http-nio-8080-exec-9] com.hyy.contoller.UserController         : User{id=null, username='admin', password='admin', email='null'}
+2021-10-22 15:10:03.084 DEBUG 41596 --- [http-nio-8080-exec-9] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
+2021-10-22 15:10:03.097 DEBUG 41596 --- [http-nio-8080-exec-9] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
+2021-10-22 15:10:03.123 DEBUG 41596 --- [http-nio-8080-exec-9] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-10-22 15:10:03.125 DEBUG 41596 --- [http-nio-8080-exec-9] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
+2021-10-22 15:10:03.135 DEBUG 41596 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:03.195 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /favicon.ico请求被拦截
+2021-10-22 15:10:03.205 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /error请求被拦截
+2021-10-22 15:10:07.259 DEBUG 41596 --- [http-nio-8080-exec-3] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:10:07.271 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:08.635 DEBUG 41596 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:09.735 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:10:09.736 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:10:09.743 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:10:09.746 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:10:09.747 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:10:09.773 DEBUG 41596 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:10:09.773 DEBUG 41596 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:10:09.784 DEBUG 41596 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:10:09.791 DEBUG 41596 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:10:09.791 DEBUG 41596 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:10:09.793 DEBUG 41596 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:10:09.794 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:10:09.795 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:10:09.795 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:10:09.834 DEBUG 41596 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /Luna.jpg请求被拦截
+2021-10-22 15:10:09.835 DEBUG 41596 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /QQ%E5%9B%BE%E7%89%8720210613220401.jpg请求被拦截
+2021-10-22 15:10:09.841 DEBUG 41596 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /%E5%A3%81%E7%BA%B8.jpg请求被拦截
+2021-10-22 15:10:09.842 DEBUG 41596 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /Vergil.jpg请求被拦截
+2021-10-22 15:10:13.806 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:10:13.807 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
+2021-10-22 15:10:13.807 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:10:13.809 DEBUG 41596 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:10:13.809 DEBUG 41596 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:10:13.810 DEBUG 41596 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:10:13.812 DEBUG 41596 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
+2021-10-22 15:10:13.812 DEBUG 41596 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
+2021-10-22 15:10:13.814 DEBUG 41596 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:10:13.814 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:10:13.814 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:10:13.814 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}, UploadFile{id=25, name='OIP-C (3).jpg', date=2021-10-06, userId=1}, UploadFile{id=26, name='QQ图片20210613220231.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:10:13.843 DEBUG 41596 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /ys%208.png请求被拦截
+2021-10-22 15:10:13.843 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /ys.png请求被拦截
+2021-10-22 15:10:13.845 DEBUG 41596 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /OIP-C%20(3).jpg请求被拦截
+2021-10-22 15:10:13.845 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /QQ%E5%9B%BE%E7%89%8720210613220231.jpg请求被拦截
+2021-10-22 15:10:25.644 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:10:25.653 DEBUG 41596 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:26.929 DEBUG 41596 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:10:26.936 DEBUG 41596 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:27.674 DEBUG 41596 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:29.043 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:10:29.049 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:29.621 DEBUG 41596 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:30.201 DEBUG 41596 --- [http-nio-8080-exec-3] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:10:30.207 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:30.621 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:10:30.628 DEBUG 41596 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:31.286 DEBUG 41596 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:10:31.292 DEBUG 41596 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:31.818 DEBUG 41596 --- [http-nio-8080-exec-10] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:10:31.823 DEBUG 41596 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:32.217 DEBUG 41596 --- [http-nio-8080-exec-6] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:10:32.222 DEBUG 41596 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:10:32.938 DEBUG 41596 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:10:32.938 DEBUG 41596 --- [http-nio-8080-exec-3] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:10:32.944 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:10:32.944 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:10:32.944 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:10:32.946 DEBUG 41596 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:10:32.947 DEBUG 41596 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:10:32.948 DEBUG 41596 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:10:32.949 DEBUG 41596 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:10:32.949 DEBUG 41596 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:10:32.950 DEBUG 41596 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:10:32.950 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:10:32.950 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:10:32.950 DEBUG 41596 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:10:34.770 DEBUG 41596 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /user/logOut请求被拦截
+2021-10-22 15:11:46.585  INFO 20984 --- [main] com.hyy.DbbUploaderApplication           : Starting DbbUploaderApplication using Java 1.8.0_131 on LAPTOP-03RO5V2B with PID 20984 (G:\workspace\workspace_myIdea\DBBUploader\target\classes started by 28459 in G:\workspace\workspace_myIdea\DBBUploader)
+2021-10-22 15:11:46.587 DEBUG 20984 --- [main] com.hyy.DbbUploaderApplication           : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-22 15:11:46.587  INFO 20984 --- [main] com.hyy.DbbUploaderApplication           : No active profile set, falling back to default profiles: default
+2021-10-22 15:11:47.407  INFO 20984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-22 15:11:47.414  INFO 20984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 15:11:47.414  INFO 20984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-22 15:11:47.510  INFO 20984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 15:11:47.510  INFO 20984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 884 ms
+2021-10-22 15:11:47.616  INFO 20984 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-10-22 15:11:47.678  INFO 20984 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-10-22 15:11:49.981  INFO 20984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-22 15:11:49.989  INFO 20984 --- [main] com.hyy.DbbUploaderApplication           : Started DbbUploaderApplication in 3.76 seconds (JVM running for 5.718)
+2021-10-22 15:11:51.251  INFO 20984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 15:11:51.251  INFO 20984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-22 15:11:51.252  INFO 20984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-10-22 15:11:53.608 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:11:53.608 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:12:00.925 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:12:00.926 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:12:07.934 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UserController         : User{id=null, username='admin', password='admin', email='null'}
+2021-10-22 15:12:08.102 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
+2021-10-22 15:12:08.115 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
+2021-10-22 15:12:08.124 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-10-22 15:12:08.125 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
+2021-10-22 15:12:08.135 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:12.954 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:12:12.955 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:12:12.966 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:12.970 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:12:12.971 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:13.002 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:13.003 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:13.004 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:13.011 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:12:13.011 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:12:13.013 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:13.014 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:13.014 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:13.014 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:12:16.068 DEBUG 20984 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:19.676 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:20.386 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:20.930 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:21.371 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:21.821 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:25.790 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:12:25.790 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:12:25.795 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:25.796 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:12:25.796 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:25.798 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:25.799 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:25.799 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:25.800 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:12:25.801 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:12:25.803 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:25.803 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:25.803 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:25.803 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:12:26.545 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:12:26.556 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:27.187 DEBUG 20984 --- [http-nio-8080-exec-10] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:12:27.193 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:27.668 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:28.500 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:12:28.500 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:12:28.507 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:28.507 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:12:28.507 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:28.509 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:28.510 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:28.510 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:28.511 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:12:28.512 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:12:28.513 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:28.513 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:28.513 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:28.513 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:12:31.109 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:12:31.115 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:31.603 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:12:31.609 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:33.533 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:12:33.538 DEBUG 20984 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:34.288 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:12:34.294 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:35.825 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:12:35.831 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:38.239 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:12:38.239 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:12:38.246 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:38.246 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:12:38.246 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:38.248 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:38.249 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:38.250 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:38.251 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:12:38.251 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:12:38.253 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:38.253 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:38.253 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:38.253 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:12:39.363 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:12:39.369 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:39.811 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:12:39.815 DEBUG 20984 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:40.985 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:12:41.960 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:12:41.961 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:12:41.966 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:41.966 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:12:41.966 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:41.968 DEBUG 20984 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:41.969 DEBUG 20984 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:41.970 DEBUG 20984 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:41.971 DEBUG 20984 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:12:41.971 DEBUG 20984 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:12:41.972 DEBUG 20984 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:41.972 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:41.972 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:41.973 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:12:43.863 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:43.864 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
+2021-10-22 15:12:43.864 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:43.866 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:43.867 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:43.867 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:43.869 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
+2021-10-22 15:12:43.869 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
+2021-10-22 15:12:43.870 DEBUG 20984 --- [http-nio-8080-exec-4] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:43.871 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:43.871 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:43.871 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}, UploadFile{id=25, name='OIP-C (3).jpg', date=2021-10-06, userId=1}, UploadFile{id=26, name='QQ图片20210613220231.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:12:45.452 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:45.452 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:12:45.452 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:45.455 DEBUG 20984 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:45.455 DEBUG 20984 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:45.456 DEBUG 20984 --- [http-nio-8080-exec-5] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:45.457 DEBUG 20984 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:12:45.458 DEBUG 20984 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:12:45.459 DEBUG 20984 --- [http-nio-8080-exec-5] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:45.459 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:45.460 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:45.460 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:12:47.330 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:47.330 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
+2021-10-22 15:12:47.331 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:47.333 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:47.334 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:47.335 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:47.337 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
+2021-10-22 15:12:47.337 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
+2021-10-22 15:12:47.338 DEBUG 20984 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:47.338 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:47.338 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:47.339 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}, UploadFile{id=25, name='OIP-C (3).jpg', date=2021-10-06, userId=1}, UploadFile{id=26, name='QQ图片20210613220231.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:12:48.645 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:12:48.645 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:12:48.645 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:12:48.648 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:12:48.648 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:12:48.649 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:12:48.650 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:12:48.650 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:12:48.651 DEBUG 20984 --- [http-nio-8080-exec-7] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:12:48.652 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 总记录数为8
+2021-10-22 15:12:48.652 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : pages=2
+2021-10-22 15:12:48.652 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:13:08.561 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.IndexController        : 您已经登录请勿重复登录！
+2021-10-22 15:13:08.568 DEBUG 20984 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:13:10.409 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.contoller.IndexController        : 您已经登录请勿重复登录！
+2021-10-22 15:13:10.414 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:13:12.246 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.contoller.IndexController        : 您已经登录请勿重复登录！
+2021-10-22 15:13:12.251 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:13:21.803 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.contoller.IndexController        : 您已经登录请勿重复登录！
+2021-10-22 15:13:21.809 DEBUG 20984 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:13:36.447 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /uploadFile/upload请求被拦截
+2021-10-22 15:13:36.448 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 收到的用户id为1
+2021-10-22 15:13:36.448 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : 收到的图片信息为org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@e9d1128
+2021-10-22 15:13:36.453 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.contoller.UploadFileController   : UploadFile{id=null, name='无标题.png', date=2021-10-22, userId=1}
+2021-10-22 15:13:36.455 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : ==>  Preparing: INSERT INTO upload_file ( name, date, userId ) VALUES ( ?, ?, ? )
+2021-10-22 15:13:36.456 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : ==> Parameters: 无标题.png(String), 2021-10-22(Date), 1(Integer)
+2021-10-22 15:13:36.473 DEBUG 20984 --- [http-nio-8080-exec-7] com.hyy.mapper.UploadFileMapper.insert   : <==    Updates: 1
+2021-10-22 15:13:36.480 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:13:36.481 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:13:36.481 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:13:36.482 DEBUG 20984 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:13:36.483 DEBUG 20984 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:13:36.483 DEBUG 20984 --- [http-nio-8080-exec-8] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:13:36.484 DEBUG 20984 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:13:36.484 DEBUG 20984 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:13:36.485 DEBUG 20984 --- [http-nio-8080-exec-8] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:13:36.486 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:13:36.486 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:13:36.486 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:13:39.193 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:13:39.194 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 当前用户所在页码为3
+2021-10-22 15:13:39.194 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:13:39.197 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:13:39.198 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:13:39.199 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:13:39.200 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
+2021-10-22 15:13:39.200 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 8(Long), 4(Long)
+2021-10-22 15:13:39.201 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 1
+2021-10-22 15:13:39.201 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:13:39.201 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:13:39.201 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=27, name='无标题.png', date=2021-10-22, userId=1}]
+2021-10-22 15:13:41.270 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:13:41.270 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 当前用户所在页码为2
+2021-10-22 15:13:41.270 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:13:41.273 DEBUG 20984 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:13:41.273 DEBUG 20984 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:13:41.274 DEBUG 20984 --- [http-nio-8080-exec-1] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:13:41.275 DEBUG 20984 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
+2021-10-22 15:13:41.275 DEBUG 20984 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long), 4(Long)
+2021-10-22 15:13:41.276 DEBUG 20984 --- [http-nio-8080-exec-1] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:13:41.277 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:13:41.277 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:13:41.277 DEBUG 20984 --- [http-nio-8080-exec-1] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=23, name='ys 8.png', date=2021-10-06, userId=1}, UploadFile{id=24, name='ys.png', date=2021-10-06, userId=1}, UploadFile{id=25, name='OIP-C (3).jpg', date=2021-10-06, userId=1}, UploadFile{id=26, name='QQ图片20210613220231.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:13:48.494 DEBUG 20984 --- [http-nio-8080-exec-2] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:13:48.499 DEBUG 20984 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:13:48.841 DEBUG 20984 --- [http-nio-8080-exec-4] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:13:48.846 DEBUG 20984 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:15:02.869 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:15:02.869 DEBUG 20984 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:15:02.877 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:15:02.878 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:15:02.878 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:15:02.886 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:15:02.886 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:15:02.887 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:15:02.887 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:15:02.888 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:15:02.888 DEBUG 20984 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:15:02.889 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:15:02.889 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:15:02.889 DEBUG 20984 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:17:32.613  INFO 49992 --- [main] com.hyy.DbbUploaderApplication           : Starting DbbUploaderApplication using Java 1.8.0_131 on LAPTOP-03RO5V2B with PID 49992 (G:\workspace\workspace_myIdea\DBBUploader\target\classes started by 28459 in G:\workspace\workspace_myIdea\DBBUploader)
+2021-10-22 15:17:32.615 DEBUG 49992 --- [main] com.hyy.DbbUploaderApplication           : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-22 15:17:32.615  INFO 49992 --- [main] com.hyy.DbbUploaderApplication           : No active profile set, falling back to default profiles: default
+2021-10-22 15:17:33.421  INFO 49992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-22 15:17:33.429  INFO 49992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 15:17:33.430  INFO 49992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-22 15:17:33.511  INFO 49992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 15:17:33.511  INFO 49992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 857 ms
+2021-10-22 15:17:33.613  INFO 49992 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-10-22 15:17:33.674  INFO 49992 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-10-22 15:17:35.986  INFO 49992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-22 15:17:35.995  INFO 49992 --- [main] com.hyy.DbbUploaderApplication           : Started DbbUploaderApplication in 3.729 seconds (JVM running for 5.502)
+2021-10-22 15:17:37.795  INFO 49992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 15:17:37.795  INFO 49992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-22 15:17:37.796  INFO 49992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-22 15:17:40.526 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:40.527 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:17:45.497 DEBUG 49992 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:17:45.497 DEBUG 49992 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:17:49.839 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:49.839 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : 您还未登录，请先登录！
+2021-10-22 15:17:54.492 DEBUG 49992 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : User{id=null, username='admin', password='admin', email='null'}
+2021-10-22 15:17:54.657 DEBUG 49992 --- [http-nio-8080-exec-7] com.hyy.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,email FROM user WHERE (username = ?)
+2021-10-22 15:17:54.669 DEBUG 49992 --- [http-nio-8080-exec-7] com.hyy.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
+2021-10-22 15:17:54.677 DEBUG 49992 --- [http-nio-8080-exec-7] com.hyy.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-10-22 15:17:54.678 DEBUG 49992 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : User{id=1, username='admin', password='admin', email='2845964844@qq.com'}
+2021-10-22 15:17:54.687 DEBUG 49992 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:55.820 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:56.309 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:56.461 DEBUG 49992 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:56.673 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:57.114 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:57.434 DEBUG 49992 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:57.798 DEBUG 49992 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:58.666 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:17:58.676 DEBUG 49992 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:59.110 DEBUG 49992 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:17:59.827 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:17:59.828 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:17:59.835 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:17:59.838 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:17:59.839 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:17:59.861 DEBUG 49992 --- [http-nio-8080-exec-10] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:17:59.861 DEBUG 49992 --- [http-nio-8080-exec-10] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:17:59.862 DEBUG 49992 --- [http-nio-8080-exec-10] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:17:59.867 DEBUG 49992 --- [http-nio-8080-exec-10] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:17:59.867 DEBUG 49992 --- [http-nio-8080-exec-10] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:17:59.869 DEBUG 49992 --- [http-nio-8080-exec-10] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:17:59.870 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:17:59.870 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:17:59.870 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:18:00.728 DEBUG 49992 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:18:01.453 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:18:01.453 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:18:01.458 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:18:01.459 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:18:01.459 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:18:01.461 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:18:01.462 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:18:01.463 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:18:01.463 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:18:01.464 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:18:01.465 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:18:01.465 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:18:01.466 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:18:01.466 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:18:02.320 DEBUG 49992 --- [http-nio-8080-exec-4] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:18:03.187 DEBUG 49992 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:18:03.188 DEBUG 49992 --- [http-nio-8080-exec-5] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:18:03.197 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:18:03.197 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:18:03.197 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:18:03.199 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:18:03.200 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:18:03.201 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:18:03.201 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:18:03.202 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:18:03.203 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:18:03.203 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:18:03.203 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:18:03.203 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:18:06.985 DEBUG 49992 --- [http-nio-8080-exec-7] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:18:07.669 DEBUG 49992 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:18:07.670 DEBUG 49992 --- [http-nio-8080-exec-8] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:18:07.674 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:18:07.675 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:18:07.675 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:18:07.677 DEBUG 49992 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:18:07.678 DEBUG 49992 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:18:07.679 DEBUG 49992 --- [http-nio-8080-exec-9] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:18:07.679 DEBUG 49992 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:18:07.680 DEBUG 49992 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:18:07.681 DEBUG 49992 --- [http-nio-8080-exec-9] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:18:07.682 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:18:07.682 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:18:07.682 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:18:08.981 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:18:10.100 DEBUG 49992 --- [http-nio-8080-exec-1] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:18:10.101 DEBUG 49992 --- [http-nio-8080-exec-1] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:18:10.106 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:18:10.107 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:18:10.107 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:18:10.108 DEBUG 49992 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:18:10.109 DEBUG 49992 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:18:10.109 DEBUG 49992 --- [http-nio-8080-exec-2] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:18:10.110 DEBUG 49992 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:18:10.110 DEBUG 49992 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:18:10.111 DEBUG 49992 --- [http-nio-8080-exec-2] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:18:10.112 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:18:10.112 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:18:10.112 DEBUG 49992 --- [http-nio-8080-exec-2] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:18:12.134 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:18:12.135 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 当前用户所在页码为3
+2021-10-22 15:18:12.135 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:18:12.137 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:18:12.137 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:18:12.138 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:18:12.139 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?,?
+2021-10-22 15:18:12.139 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 8(Long), 4(Long)
+2021-10-22 15:18:12.140 DEBUG 49992 --- [http-nio-8080-exec-3] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 1
+2021-10-22 15:18:12.141 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:18:12.141 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:18:12.141 DEBUG 49992 --- [http-nio-8080-exec-3] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=27, name='无标题.png', date=2021-10-22, userId=1}]
+2021-10-22 15:18:13.150 DEBUG 49992 --- [http-nio-8080-exec-5] com.hyy.interceptor.LoginInterceptor     : /user/goMyUpload请求被拦截
+2021-10-22 15:18:13.151 DEBUG 49992 --- [http-nio-8080-exec-5] com.hyy.contoller.UserController         : 想要去查看我的上传的用户的id为1
+2021-10-22 15:18:13.155 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.interceptor.LoginInterceptor     : /uploadFile/toMyUpload请求被拦截
+2021-10-22 15:18:13.156 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 当前用户所在页码为1
+2021-10-22 15:18:13.156 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 用户的userId为1
+2021-10-22 15:18:13.158 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==>  Preparing: SELECT COUNT(*) FROM upload_file WHERE (userId = ?)
+2021-10-22 15:18:13.158 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : ==> Parameters: 1(Integer)
+2021-10-22 15:18:13.159 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.m.U.selectPage_mpCount               : <==      Total: 1
+2021-10-22 15:18:13.160 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==>  Preparing: SELECT id,name,date,userId FROM upload_file WHERE (userId = ?) LIMIT ?
+2021-10-22 15:18:13.160 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : ==> Parameters: 1(Integer), 4(Long)
+2021-10-22 15:18:13.161 DEBUG 49992 --- [http-nio-8080-exec-6] c.h.mapper.UploadFileMapper.selectPage   : <==      Total: 4
+2021-10-22 15:18:13.162 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 总记录数为9
+2021-10-22 15:18:13.162 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : pages=3
+2021-10-22 15:18:13.162 DEBUG 49992 --- [http-nio-8080-exec-6] com.hyy.contoller.UploadFileController   : 查到用户id为1的用户上传到的图片的此次分页数据为[UploadFile{id=18, name='Luna.jpg', date=2021-10-06, userId=1}, UploadFile{id=19, name='QQ图片20210613220401.jpg', date=2021-10-06, userId=1}, UploadFile{id=21, name='壁纸.jpg', date=2021-10-06, userId=1}, UploadFile{id=22, name='Vergil.jpg', date=2021-10-06, userId=1}]
+2021-10-22 15:18:13.413 DEBUG 49992 --- [http-nio-8080-exec-7] com.hyy.contoller.UserController         : 您已经登录请勿重复登录！
+2021-10-22 15:18:13.417 DEBUG 49992 --- [http-nio-8080-exec-8] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截
+2021-10-22 15:18:14.137 DEBUG 49992 --- [http-nio-8080-exec-9] com.hyy.contoller.UserController         : 您已经登录请先注销后再注册！
+2021-10-22 15:18:14.142 DEBUG 49992 --- [http-nio-8080-exec-10] com.hyy.interceptor.LoginInterceptor     : /uploadFile/goUpload请求被拦截

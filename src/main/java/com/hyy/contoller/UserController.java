@@ -84,11 +84,11 @@ public  String goRegister(HttpSession session,RedirectAttributes attributes){
    @RequestMapping("goMyUpload")
    public String goMyUpload(HttpSession session, Model model, RedirectAttributes attributes){
       User user = (User) session.getAttribute("user");
-      if (user==null){
-         model.addAttribute("errorMsg","您还未登录，请先登录后再查看我的上传！");
-         logger.debug("您还未登录，请先登录后再查看我的上传！");
-         return "login";
-      }
+//      if (user==null){
+//         model.addAttribute("errorMsg","您还未登录，请先登录后再查看我的上传！");
+//         logger.debug("您还未登录，请先登录后再查看我的上传！");
+//         return "login";
+//      }
       logger.debug("想要去查看我的上传的用户的id为{}",user.getId());
       attributes.addAttribute("userId",user.getId());
       return "redirect:/uploadFile/toMyUpload";
